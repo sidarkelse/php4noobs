@@ -55,3 +55,26 @@ danielhe4rt@he4rt:~/dev/he4rt/php4noobs/3-Basico/exemplos$ php variaveis2.php
 Me chamo João e tenho 18 Anos
 Porém fiz aniversário e agora tenho 19 Anos
 ```
+ <p align="center"><i>Outros tipos de váriaveis usadas </i></p>
+   
+   ```php
+    <?php 
+
+   #Tipos de variáveis
+    //As váriaveis em php podem ter diferentes tipos de valores 
+    //E a mesma váriavel pode  ter diferente tipos de valores.
+    #Exemplo:
+     $variavel =100;
+     $variavel ="cem";
+
+     #Também existem variáveis de tipo implícito,Que é importante saber:
+    $inteiros =100; #int
+    $float = 10.5; #float(com  casas decimais)
+    $bool = true; #verdadeiro ou falso
+    $string = "Olá mundo!"; #String(Cadeia de caracteres )
+    $array = [1,2,3]; #Array - coleção de valores 
+    $pessoa = new Pessoa(); #objeto com propriedade e métodos
+    $nulo = null; #Váriavel com valor nulo
+    ?>
+    ```
+
