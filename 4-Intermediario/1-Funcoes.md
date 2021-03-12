@@ -226,3 +226,55 @@ function authenticateUser(string $username, string $password)
     return 'Login Successful';
 }
 ```
+#FUNÇÕES ANÓNIMAS
+
+# A partir do PHP 5.3 foram intruduzidas as funões anónimas.
+
+# Uma função anónima não tem nome e pode ser definida como o valor
+# a atribuir a uma variável.
+#Exemplo
+```php
+$a = function () {
+    echo '<p>Olá!</p>';
+
+};
+```
+
+# Importante: veja como , neste caso, após a chave de fecho da função
+#Tem que surgir um '; '
+```
+$a();
+```
+#=====================================
+#Outro exemplo
+```
+$falar = function ($mensagem) {
+    echo "<p>Eu digo: $mensagem</p>";
+};
+$falar('Eu to aqui carai!');
+```
+#======================================================
+# Mais outro exemplo
+```
+$andar = function ($metros) {
+    return "Andei $metros Metros";
+};
+
+echo $andar(100);
+```
+#=================================================
+
+#  As funções anónimas são particulamente úteis quando
+# as queremos passar como argumento para uma função.
+```
+$a = function()
+{
+ return '<p>Função A</p>';
+};
+
+function falar($x){
+    echo $x;
+
+}
+falar($a());
+```
